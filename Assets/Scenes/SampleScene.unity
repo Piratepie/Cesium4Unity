@@ -135,28 +135,33 @@ GameObject:
   - component: {fileID: 158174938}
   - component: {fileID: 158174937}
   - component: {fileID: 158174936}
+  - component: {fileID: 158174939}
   m_Layer: 0
-  m_Name: invis
+  m_Name: MaskObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &158174935
-Transform:
+--- !u!224 &158174935
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158174934}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 577.5, y: -69.3, z: 74.1}
+  m_LocalRotation: {x: -2.0597696e-15, y: 4.260104e-12, z: -0.00000036767705, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 74.1}
   m_LocalScale: {x: 28.243782, y: 28.243782, z: 28.243782}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1397224805}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 574.7, y: -69.3}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &158174936
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -228,6 +233,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158174934}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &158174939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158174934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f14e1eb550b9a4fb6c0a2f0456845b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _adjustOrientationForGlobeWhenMoving: 1
+  _detectTransformChanges: 1
+  _localToGlobeFixedMatrix:
+    c0:
+      x: -2.499276760802945
+      y: 28.132984907239184
+      z: -0.000016388659904875085
+      w: 0
+    c1:
+      x: 17.281879635078994
+      y: 1.535299775128706
+      z: 22.286559065890753
+      w: 0
+    c2:
+      x: -22.199132326959493
+      y: -1.9721153434441896
+      z: 17.349942625859022
+      w: 0
+    c3:
+      x: 3910751.8648893335
+      y: 347998.36903901916
+      z: 5009693.797439334
+      w: 1
+  _localToGlobeFixedMatrixIsValid: 1
 --- !u!1 &208409520
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,7 +643,6 @@ GameObject:
   - component: {fileID: 527798812}
   - component: {fileID: 527798817}
   - component: {fileID: 527798816}
-  - component: {fileID: 527798818}
   - component: {fileID: 527798819}
   m_Layer: 0
   m_Name: cube
@@ -690,9 +730,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527798811}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.018282743, y: 0.736799, z: -0.0066949413, w: 0.67583144}
-  m_LocalPosition: {x: 149.79004, y: -75.719795, z: 74.36751}
-  m_LocalScale: {x: 58.127327, y: 58.127, z: 58.127327}
+  m_LocalRotation: {x: -0.014727127, y: 0.99976915, z: 0.00012210647, w: 0.015646996}
+  m_LocalPosition: {x: -6.2074323, y: -77.079834, z: 285.6854}
+  m_LocalScale: {x: 58.127335, y: 58.127, z: 58.127335}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1397224805}
@@ -725,42 +765,26 @@ MonoBehaviour:
   _detectTransformChanges: 1
   _localToGlobeFixedMatrix:
     c0:
-      x: 44.65018541673978
-      y: -1.0424103530806519
-      z: -37.2029642130103
+      x: 5.521221058360112
+      y: -57.81187953280501
+      z: -2.467782479880267
       w: 0
     c1:
-      x: 37.21171742071757
-      y: 2.261685215476041
-      z: 44.59731907002981
+      x: 35.7128621547245
+      y: 1.4539849026369043
+      z: 45.83912527677626
       w: 0
     c2:
-      x: -0.6477658360735168
-      y: 58.07395566639887
-      z: -2.4046405734598766
+      x: 45.52889225092315
+      y: 5.870241466983752
+      z: -35.65736225833103
       w: 0
     c3:
-      x: 3910785.326330676
-      y: 347574.758275599
-      z: 5009688.896048879
+      x: 3910632.2059422056
+      y: 347404.54360815755
+      z: 5009817.633857942
       w: 1
   _localToGlobeFixedMatrixIsValid: 1
---- !u!111 &527798818
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527798811}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 27b97a53174b7964999b1991e6206aba, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 27b97a53174b7964999b1991e6206aba, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 1
-  m_CullingType: 0
 --- !u!114 &527798819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,13 +945,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515551153}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000005603074, y: 0.9076474, z: 0.00001318433, w: -0.41973367}
-  m_LocalPosition: {x: 5.730578, y: -18.148468, z: 182.63052}
-  m_LocalScale: {x: 1, y: 1.0000004, z: 1}
+  m_LocalRotation: {x: -0.000030186116, y: 0.10590261, z: 0.00003101402, w: 0.9943765}
+  m_LocalPosition: {x: 553.2, y: -56, z: 6.5}
+  m_LocalScale: {x: 1.0000035, y: 1.0000004, z: 1.0000035}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1397224805}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.004, y: 12.158, z: 0.003}
 --- !u!114 &1515551155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,24 +1075,24 @@ MonoBehaviour:
   _detectTransformChanges: 1
   _localToGlobeFixedMatrix:
     c0:
-      x: -0.541575409961162
-      y: -0.6983101518293968
-      z: 0.46803739933621097
+      x: 0.0790691119812252
+      y: 0.9884469228230892
+      z: -0.1293355076146416
       w: 0
     c1:
-      x: 0.6118603259752848
-      y: 0.054357039772643875
-      z: 0.7890962989270943
+      x: 0.6119309568519716
+      y: 0.05429407340763634
+      z: 0.7890458623520573
       w: 0
     c2:
-      x: 0.576474877679116
-      y: -0.7137284120675843
-      z: -0.39782969875605356
+      x: -0.7869518247174745
+      y: 0.14153350596182546
+      z: 0.6005680723297416
       w: 0
     c3:
-      x: 3910748.208013172
-      y: 347426.83396725723
-      z: 5009800.829500796
+      x: 3910815.0378936483
+      y: 347982.3964972288
+      z: 5009662.7660147855
       w: 1
   _localToGlobeFixedMatrixIsValid: 1
 --- !u!114 &1515551158
